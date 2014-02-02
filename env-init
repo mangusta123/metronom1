@@ -1,0 +1,32 @@
+### File env-init
+### Setup cross-compile environment for Bone-Ubuntu 12.04 (3.2.23-psp18 kernel)
+### Usage: source env-init
+
+## Line starting with '#' means comment line.
+echo " Setting cross-development environemnt for Beaglebone Ubuntu 12.04..."
+
+## Set MACHINE
+MACHINE=beaglebone
+
+## Set SYSROOTSDIR & STAGEDIR
+SYSROOTSDIR=/usr
+STAGEDIR=${SYSROOTSDIR}
+
+## Set CROSSBINDIR (where cross compiler exists)
+CROSSBINDIR=${SYSROOTSDIR}/bin
+
+## Set KERNELDIR
+export KERNELDIR=/path_to_linux_distro/linux_distro
+
+## Set PATH
+PATH=${CROSSBINDIR}:${PATH}
+
+unset CFLAGS CPPFLAGS CXXFLAGS LDFLAGS MACHINE
+
+export ARCH="arm"
+export CROSS_COMPILE="arm-linux-gnueabihf-"
+export CC="arm-linux-gnueabihf-gcc"
+export LD="arm-linux-gnueabihf-ld"
+export STRIP="arm-linux-gnueabihf-strip"
+
+echo "Done."

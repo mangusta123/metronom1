@@ -1,0 +1,12 @@
+
+for cross-compiler (assuming that all environment variables for compiler/assembler/linker have been set)
+
+
+>arm-linux-gnueabihf-gcc -o [output file] [source files]
+
+
+
+for kernel module .ko (assuming that the working directory contains Makefile)
+
+
+>make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
