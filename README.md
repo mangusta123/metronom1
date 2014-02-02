@@ -15,7 +15,7 @@ In order to compile kernel modules it is necessary to have a Linux distribution,
 
 and built specifically for Bone model of BeagleBoard. Board model is important since kernel modules 
 
-compiled by Linux distro built for e.g. BeagleBoard-xM cannot be deployed by BeagleBoard-Bone and vice
+compiled by Linux distro built e.g. for BeagleBoard-xM cannot be deployed by BeagleBoard-Bone and vice
 
 versa. Path to Linux distro in Makefile is to be modified correspondingly. 
 
