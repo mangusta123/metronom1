@@ -9,7 +9,7 @@ In order to compile executables and .ko kernel modules it is necessary to initia
 
 variables for cross-compiler/linker/assembler.
 
-command: source env-init
+>~$source env-init
 
 In order to compile kernel modules it is necessary to have a Linux distribution, properly configured 
 
