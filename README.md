@@ -49,13 +49,13 @@ Remote internet connection is accomplished by cross-compiling server side (5) an
 
 client.
 
-The most challenging part while getting familiar with kernel module implementation was utilizing memory-mapped
+The most challenging part while getting familiar with kernel module implementation was utilizing
 
-I/O and examining board datasheets. Due to the fact that Linux used virtual memory system and datasheet used
+memory-mapped I/O and examining board datasheets. Due to the fact that Linux used virtual memory system and 
 
-exclusively physical addresses, it was necessary to expose and explicitly allocate certain physical memory 
+datasheet used exclusively physical addresses, it was necessary to expose and explicitly allocate certain
 
-regions (otherwise invisible) by means of Linux system functions.
+physical memory regions (otherwise invisible) by means of Linux system functions.
 
 
 
