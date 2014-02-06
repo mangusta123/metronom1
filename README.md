@@ -55,7 +55,11 @@ memory-mapped I/O and examining board datasheets. Due to the fact that Linux use
 
 datasheet used exclusively physical addresses, it was necessary to expose and explicitly allocate certain
 
-physical memory regions (otherwise invisible) by means of Linux system functions.
+physical memory regions (otherwise invisible) by means of Linux system functions. Basically it was needed
+
+to perform the procedure somewhat opposite to logical address translation: given a base physical address 
+
+and required offset, we had to get the corresponding logical memory space to work with.
 
 
 
