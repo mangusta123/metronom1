@@ -35,13 +35,19 @@ and close() interface functions used by executable to access board devices (LED 
 
 device file. 
 
-Executables provide command-line interface accessed through serial connection. User may provide different 
+Executables provide command-line interface through serial connection. User may provide different 
 
-metronome parameters like tempo and time-signature. Commands are detected by means of polling (3) and 
+metronome parameters like tempo and time-signature. LEDs are lit in two different ways: polling (3) which is
 
-interrupt (4). Remote internet connection is accomplished by cross-compiling server side (5) and connecting 
+inefficient since the user must wait for LEDs to finish their flashing given by previous input parameters and
 
-to it by native client.
+hence is unable to input the new parameters, and interrupt (4) where LED I/O registers are checked at specific 
+
+intervals at each timer interrupt so the user may update metronome parameters whenever he wants. 
+
+Remote internet connection is accomplished by cross-compiling server side (5) and connecting to it by native
+
+client.
 
 The most challenging part while getting familiar with kernel module implementation was utilizing memory-mapped
 
