@@ -41,9 +41,9 @@ metronome parameters like tempo and time-signature. LEDs are lit in two differen
 
 inefficient since the user must wait for LEDs to finish their flashing given by previous input parameters and
 
-hence is unable to input the new parameters, and interrupt (4) where LED I/O registers are checked at specific 
+hence is unable to submit the new parameters, and interrupt (4) where LED I/O registers are checked at specific 
 
-intervals at each timer interrupt so the user may update metronome parameters whenever he wants. 
+intervals on every timer interrupt so the user may update metronome parameters whenever he wants. 
 
 Remote internet connection is accomplished by cross-compiling server side (5) and connecting to it by native
 
