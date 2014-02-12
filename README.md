@@ -51,15 +51,15 @@ client.
 
 The most challenging part while getting familiar with kernel module implementation was utilizing
 
-memory-mapped I/O and examining board datasheets. Due to the fact that Linux used virtual memory system and 
+memory-mapped I/O and examining board datasheets. Due to the fact that Linux used virtual memory system
 
-datasheet used exclusively physical addresses, it was necessary to expose and explicitly allocate certain
+and datasheet used exclusively physical addresses, it was necessary to expose and explicitly allocate 
 
-physical memory regions (otherwise invisible) by means of Linux system functions. Basically it was needed
+certain physical memory regions (otherwise invisible) by means of Linux system functions. Basically it was
 
-to perform the procedure somewhat opposite to logical address translation: given a base physical address 
+needed to perform the procedure somewhat opposite to logical address translation: given a base physical
 
-and required offset, we had to get the corresponding logical memory space to work with.
+address and required offset, we had to get the corresponding logical memory space to work with.
 
 
 
