@@ -1,6 +1,6 @@
 // 	File Template-gpio-led-w.c
 // A simple character driver with four user LEDs in Beaglebone Ubuntu
-// 	Programmed by	Byung Kook Kim, Apr. 9. 2012
+
 
 #include <linux/module.h>
 #include <linux/fs.h>
